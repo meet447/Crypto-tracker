@@ -47,7 +47,7 @@ def transaction_page(id):
 @app.route("/analyze/<id>")
 def transaction_analyze_page(id):
     data = id
-    return render_template("main.html")
+    return render_template("main.html", id=id)
 
 
 app.run(debug=True)
